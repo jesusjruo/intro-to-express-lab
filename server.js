@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/' , (req , res) => {
-    res.send('<h1> Landing page for express lab.</h1>');
+    res.send('<h1> Intro to express lab.</h1><br><br> <p> - /greetings/*your-name* to say hello. </p> <p> - /roll/*number* to roll a random integer from 0 to that number.</p> <p> - /shoes/*query-params* (optional) to enter in the shoes catalog. </p>');
 });
 
 app.get('/greetings/:username' , (req , res) => {
